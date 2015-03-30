@@ -1,3 +1,44 @@
 <div class="col-md-12">
 This is the room view.
 </div>
+
+<div class="col-sm-12">
+  <form class="form" name="form" novalidate>
+
+    <!--<div class="form-group">-->
+      <!--<label>Join a Room</label>-->
+
+      <!--<input type="text" name="room" class="form-control" ng-model="enterRoom" required>-->
+    <!--</div>-->
+
+    <div class="form-group">
+      <label>Create a room</label>
+
+      <input type="text" name="createRoom" class="form-control" ng-model="newRoom" required>{{newRoom}}
+    </div>
+
+    <div class="form-group has-error">
+      <p class="help-block" ng-show="form.email.$error.required && form.password.$error.required && submitted">
+      Please enter your email and password.
+      </p>
+      <p class="help-block" ng-show="form.email.$error.email && submitted">
+      Please enter a valid email.
+      </p>
+
+      <p class="help-block">{{ errors.other }}</p>
+    </div>
+
+    <div>
+      <button class="btn btn-inverse btn-lg btn-login" ng-click="addRoom()" type="submit">
+        Create Room
+      </button>
+      <!--<button class="btn btn-inverse btn-lg btn-login" ng-click="joinRoom(enterRoom)" type="submit">-->
+        <!--Join room-->
+      <!--</button>-->
+      <!--<a class="btn btn-default btn-lg btn-register" href="/signup">-->
+        <!--Register-->
+      <!--</a>-->
+    </div>
+
+  </form>
+</div>
