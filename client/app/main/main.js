@@ -4,7 +4,7 @@ angular.module('beatboxApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('main', {
-        url: '/',
+        url: '/oldHome',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       });
