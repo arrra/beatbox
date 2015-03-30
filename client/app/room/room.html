@@ -1,3 +1,4 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
 <div class="col-md-12">
 This is the room view.
 </div>
@@ -32,9 +33,9 @@ This is the room view.
       <button class="btn btn-inverse btn-lg btn-login" ng-click="addRoom()" type="submit">
         Create Room
       </button>
-      <!--<button class="btn btn-inverse btn-lg btn-login" ng-click="joinRoom(enterRoom)" type="submit">-->
-        <!--Join room-->
-      <!--</button>-->
+      <button class="btn btn-inverse btn-lg btn-login" ng-click="joinRoom(newRoom)" type="submit">
+        Join room
+      </button>
       <!--<a class="btn btn-default btn-lg btn-register" href="/signup">-->
         <!--Register-->
       <!--</a>-->
